@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <!-- ================= SEO BASIC ================= -->
+<title>SCHOOL MIS </title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Smart School Management Information System (MIS) for managing students, marks, reports, attendance and school administration online in Rwanda,And it is developed by student called IRASUBIZA VIATEUR who has orgin in RUBAVU DISTRICT IN WESTERN PROVINCE AND ALSO HE LEARN BACHELORS DEGREE IN MATHEMETICS AND COMPUTER SCIENCES IN EAST AFRICAN UNIVERSITY LOCATED IN NYAGATARE DISTRICT AND HE DEVELOPMORE APP ON MIT INVENTOR AND HE CREATE AI IN HUGGING FACE ALSO HE LEARN IN COLLEGE MARANATHA FROM 2022-2025 IN COMPUTERSYSTEM AND ARCHITECTURE AND ALSO HE WAS A SPECIAL STUDENT IN ALL CARRIERS.">
+<meta name="keywords" content="School MIS, Student Management System, Rwanda School System, Online School System, Student Marks, Attendance System, School Reports">
+<meta name="author" content="Viateur Irasubiza">
+
+<!-- ================= OPEN GRAPH (Facebook, WhatsApp) ================= -->
+<meta property="og:title" content="School Management Information System">
+<meta property="og:description" content="Manage students, marks, attendance and reports easily with this online school system.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://viateurirasubiza-dotcom.github.io/-SCHOOL-MANAGMENT-INFORMATION-SYSTEM/">
+<meta property="og:image" content="https://viateurirasubiza-dotcom.github.io/-SCHOOL-MANAGMENT-INFORMATION-SYSTEM/logo.png">
+
+<!-- ================= TWITTER CARD ================= -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="School Management Information System">
+<meta name="twitter:description" content="Online system for managing school data easily.">
+<meta name="twitter:image" content="https://viateurirasubiza-dotcom.github.io/-SCHOOL-MANAGMENT-INFORMATION-SYSTEM/logo.png">
+
+<!-- ================= SEO CONTROL ================= -->
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://viateurirasubiza-dotcom.github.io/-SCHOOL-MANAGMENT-INFORMATION-SYSTEM/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Report System</title>
+
+<style>
+/* FUTURISTIC LIVE NEON LOGIN */
+
+body{
+font-family:Arial;
+background:#050510;
+margin:0;
+padding:20px;
+overflow-x:hidden;
+position:relative;
+min-height:100vh;
+color:white;
+}
+.school-logo{
+width:100px;
+height:100px;
+object-fit:contain;
+margin-bottom:15px;
+filter:drop-shadow(0 0 15px #00ffff);
+animation:logoGlow 2s infinite alternate;
+}
+
+@keyframes logoGlow{
+from{
+transform:scale(1);
+filter:drop-shadow(0 0 10px #00ffff);
+}
+to{
+transform:scale(1.05);
+filter:drop-shadow(0 0 25px #ff00ff);
+}
+}
+
+/* LIVE PARTICLES */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:200%;
+height:200%;
+background:
+radial-gradient(circle,#00ffff88 2px,transparent 3px),
+radial-gradient(circle,#ff00ff88 2px,transparent 3px),
+radial-gradient(circle,#00ff8888 2px,transparent 3px);
+background-size:120px 120px;
+animation:particlesMove 25s linear infinite;
+z-index:-2;
+opacity:0.5;
+}
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+linear-gradient(120deg,#000000ee,#050520ee,#000000ee);
+z-index:-3;
+}
+
+/* PARTICLES ANIMATION */
+@keyframes particlesMove{
+0%{
+transform:translate(0,0);
+}
+100%{
+transform:translate(-300px,-300px);
+}
+}
+
+/* LOGIN BOX */
+.login-box{
+max-width:420px;
+margin:80px auto;
+padding:35px;
+border-radius:20px;
+background:rgba(10,10,30,0.75);
+backdrop-filter:blur(12px);
+border:1px solid #00ffff55;
+box-shadow:
+0 0 15px #00ffff88,
+0 0 35px #00ffff55,
+0 0 60px #ff00ff33;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+/* NEON BORDER EFFECT */
+.login-box::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:conic-gradient(
+from 0deg,
+transparent,
+#00ffff,
+transparent,
+#ff00ff,
+transparent
+);
+animation:rotateBorder 6s linear infinite;
+z-index:-1;
+}
+
+.login-box::after{
+content:"";
+position:absolute;
+inset:3px;
+background:rgba(5,5,20,0.95);
+border-radius:18px;
+z-index:-1;
+}
+
+@keyframes rotateBorder{
+100%{
+transform:rotate(360deg);
+}
+}
+
+/* TITLE */
+.login-box h2{
+font-size:28px;
+margin-bottom:25px;
+color:#00ffff;
+text-shadow:
+0 0 10px #00ffff,
+0 0 20px #00ffff;
+letter-spacing:2px;
+}
+
+/* INPUTS */
+.login-box input{
+width:90%;
+padding:14px;
+margin:10px 0;
+border:none;
+outline:none;
+border-radius:10px;
+background:#0d0d25;
+color:white;
+font-size:15px;
+box-shadow:
+inset 0 0 10px #00ffff33,
+0 0 8px #00ffff44;
+transition:0.3s;
+}
+
+.login-box input:focus{
+transform:scale(1.03);
+box-shadow:
+0 0 15px #00ffff,
+0 0 30px #00ffff88;
+}
+
+/* BUTTON */
+.login-box button{
+width:95%;
+padding:14px;
+margin-top:15px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#00ffff,#ff00ff);
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+box-shadow:
+0 0 15px #00ffff88,
+0 0 25px #ff00ff55;
+}
+
+.login-box button:hover{
+transform:translateY(-3px) scale(1.02);
+box-shadow:
+0 0 20px #00ffff,
+0 0 40px #ff00ff;
+}
+
+/* MAIN CONTAINER */
+.container{
+max-width:1200px;
+margin:auto;
+background:rgba(255,255,255,0.95);
+padding:20px;
+border-radius:10px;
+color:black;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+.login-box{
+margin-top:40px;
+padding:25px;
+}
+
+.login-box h2{
+font-size:22px;
+}
+
+}
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+input,select,button{
+padding:7px;
+margin:4px;
+}
+
+button{
+cursor:pointer;
+}
+
+.report{
+border:3px solid #000;
+padding:15px;
+margin-top:20px;
+background:white;
+}
+
+.header-top{
+text-align:center;
+font-size:20px;
+font-weight:bold;
+color:green;
+}
+
+.sub-header{
+text-align:center;
+font-size:12px;
+margin-bottom:10px;
+}
+
+.line-input{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin:6px 0;
+font-size:13px;
+font-weight:bold;
+}
+
+.line-input span{
+flex:1;
+border-bottom:1px dotted #000;
+padding-left:5px;
+}
+
+.term-title{
+margin-top:10px;
+background:#eee;
+padding:6px;
+font-weight:bold;
+border-left:5px solid green;
+}
+
+.table-report{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+font-size:11px;
+}
+
+.table-report th,.table-report td{
+border:1px solid #000;
+padding:4px;
+text-align:center;
+white-space:nowrap;
+}
+
+.subject-col{
+text-align:left;
+padding-left:6px;
+}
+
+.action-btn{
+padding:5px 10px;
+border:none;
+color:white;
+}
+
+.view-btn{
+background:green;
+}
+
+.delete-btn{
+background:red;
+}
+
+.login-box{
+max-width:400px;
+margin:80px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.login-box h2{
+margin-bottom:20px;
+}
+
+.logout-btn{
+background:red;
+color:white;
+border:none;
+padding:8px 15px;
+float:right;
+}
+
+@media print{
+body *{
+visibility:hidden;
+}
+
+#report,#report *{
+visibility:visible;
+}
+
+#report{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+background:white;
+}
+
+button{
+display:none !important;
+}
+
+.table-report{
+font-size:10px;
+}
+
+@page{
+size:A4 landscape;
+margin:10mm;
+}
+}
+.upload-btn{
+display:inline-block;
+padding:10px 18px;
+background:linear-gradient(90deg,#00ffff,#ff00ff);
+color:white;
+border-radius:10px;
+cursor:pointer;
+margin-bottom:15px;
+font-weight:bold;
+box-shadow:0 0 15px #00ffff88;
+transition:0.3s;
+}
+
+.upload-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #ff00ff;
+}
+
+.school-logo{
+width:120px;
+height:120px;
+object-fit:contain;
+display:block;
+margin:0 auto 15px auto;
+border-radius:50%;
+border:3px solid #00ffff;
+filter:drop-shadow(0 0 15px #00ffff);
+animation:logoGlow 2s infinite alternate;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+
+<!-- LEVEL SELECT -->
+<select id="levelSelect" onchange="loadSubjects()">
+
+  <option value="">Select Level</option>
+
+  <option value="PRIMARY">PRIMARY</option>
+
+  <option value="SECONDARY">SECONDARY</option>
+
+</select>
+
+<!-- SUBJECT SELECT -->
+<select id="subjectSelect">
+
+  <option value="">Select Subject</option>
+
+</select>
+
+</select>
+<div id="loginPage" class="login-box">
+<label for="logoUpload" id="uploadBtn" class="upload-btn">
+Upload School Logo
+</label>
+
+<input type="file" id="logoUpload" accept="image/*" style="display:none;">
+
+<img id="schoolLogo" class="school-logo" style="display:none;">
+
+<h2>SCHOOL MIS </h2>
+
+<input type="text" id="username" placeholder="Username"><br>
+<input type="password" id="password" placeholder="Password"><br>
+
+
+<button onclick="login()">Login</button>
+
+<p>
+<b></b>  <br>
+<b></b>
+</p>
+</div>
+<div id="teacherSystem" style="display:none;">
+  <div class="container">
+
+    <button onclick="logout()">Logout</button>
+    <h2>Teacher Dashboard</h2>
+
+    <select id="class" onchange="filterTeacherSubject()">
+      <option value="">Select Class</option>
+
+      <option>P1</option>
+      <option>P2</option>
+      <option>P3</option>
+      <option>P4</option>
+      <option>P5</option>
+      <option>P6</option>
+
+      <option>S1</option>
+      <option>S2</option>
+      <option>S3</option>
+      <option>S4</option>
+      <option>S5</option>
+      <option>S6</option>
+    </select>
+
+    <select id="term">
+      <option value="TERM1">TERM 1</option>
+      <option value="TERM2">TERM 2</option>
+      <option value="TERM3">TERM 3</option>
+    </select>
+
+    <div id="marks"></div>
+
+    <button onclick="saveAllStudents()">Save</button>
+    <button onclick="clearForm()">Clear</button>
+
+  </div>
+</div>
+
+
+<!-- HOD SYSTEM -->
+<div id="hodSystem" style="display:none;">
+  <div class="container">
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <h2>HOD Dashboard</h2>
+
+    <button onclick="printAllReports()">Print All Reports</button>
+    <button onclick="clearAll()">Delete All</button>
+    <button onclick="deleteClassStudents()">Delete Class</button>
+<button onclick="loadClassStudents()">View Class Students</button>
+<select id="printClassSelect">
+  <option value="">Select Class to Print</option>
+  <option>P1</option>
+  <option>P2</option>
+  <option>P3</option>
+  <option>P4</option>
+  <option>P5</option>
+  <option>P6</option>
+  <option>S1</option>
+  <option>S2</option>
+  <option>S3</option>
+  <option>S4</option>
+  <option>S5</option>
+  <option>S6</option>
+</select>
+
+    <h3>Add Student</h3>
+
+    <input type="text" id="newStudentName" placeholder="Student Name">
+
+    <select id="newStudentClass">
+      <option value="">Select Class</option>
+      <option>P1</option>
+      <option>P2</option>
+      <option>P3</option>
+      <option>P4</option>
+      <option>P5</option>
+      <option>P6</option>
+      <option>S1</option>
+      <option>S2</option>
+      <option>S3</option>
+      <option>S4</option>
+      <option>S5</option>
+      <option>S6</option>
+    </select>
+
+    <button onclick="addStudentToClass()">Add Student</button>
+
+    <button onclick="toggleTable('classTable')">Hide/Show Class Students</button>
+<button onclick="toggleTable('savedTable')">Hide/Show Saved Students</button>
+
+       <hr>
+<br><hr>
+
+<h3>Class Students View</h3>
+
+<table id="classTable" border="1" width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Class</th>
+    <th>SDMS</th>
+    <th>Action</th>
+  </tr>
+
+  <tbody id="classList"></tbody>
+</table>
+ <hr>
+    <h3>Saved Students</h3>
+    <table id="savedTable" border="1" width="100%">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>SDMS</th>
+        <th>Term</th>
+        <th>Action</th>
+      </tr>
+
+      <tbody id="list"></tbody>
+    </table>
+
+    <div id="report"></div>
+
+  </div>
+</div>
+
+<!-- (FULL CODE YAWE IGUMANA HANO HEJURU NKA YARI) -->
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+  deleteDoc,
+  doc,
+  setDoc,
+  getDoc
+} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSy....",
+  authDomain: "neomis-77b36.firebaseapp.com",
+  projectId: "neomis-77b36",
+  storageBucket: "neomis-77b36.firebasestorage.app",
+  messagingSenderId: "836047126207",
+  appId: "1:836047126207:web:df890a577383585698100a"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.db = db;
+
+window.collection = collection;
+window.getDocs = getDocs;
+window.addDoc = addDoc;
+window.deleteDoc = deleteDoc;
+window.doc = doc;
+
+window.load = async function load() {
+  const snap = await getDocs(collection(db, "students"));
+
+  let students = [];
+
+  snap.forEach((d) => {
+    students.push({ id: d.id, ...d.data() });
+  });
+
+  // save firebase data
+  localStorage.setItem("students", JSON.stringify(students));
+
+  // ALSO build classStudents automatically (IMPORTANT FIX)
+  let grouped = {};
+
+  students.forEach(s => {
+    if (!grouped[s.class]) {
+      grouped[s.class] = [];
+    }
+    if (!grouped[s.class].includes(s.name)) {
+      grouped[s.class].push(s.name);
+    }
+  });
+
+  window.classStudents = grouped;
+  localStorage.setItem("classStudents", JSON.stringify(grouped));
+
+  // render table (HOD)
+  let html = "";
+
+  students.forEach(s => {
+    html += `
+      <tr>
+        <td>${s.name}</td>
+        <td>${s.class}</td>
+        <td>${s.sdms || "-"}</td>
+        <td>${s.term}</td>
+        <td>
+          <button class="action-btn view-btn" onclick="view('${s.id}')">View</button>
+          <button class="action-btn delete-btn" onclick="deleteStudent('${s.id}')">Delete</button>
+        </td>
+      </tr>
+    `;
+  });
+
+  const list = document.getElementById("list");
+  if (list) list.innerHTML = html;
+};
+
+window.login = function () {
+
+  try {
+
+    const user = document.getElementById("username").value.trim();
+    const pass = document.getElementById("password").value.trim();
+
+    const level = document.getElementById("levelSelect")?.value;
+    const subject = document.getElementById("subjectSelect")?.value;
+
+    // 🔥 VALIDATION FIX
+    if (!user || !pass) {
+      alert("Enter username and password");
+      return;
+    }
+
+    const subjectPasswords = {
+      MATHEMATICS: "math12",
+      ENGLISH: "eng12",
+      IKINYARWANDA: "kinya12",
+      SCIENCE: "sci12",
+      "SOCIAL STUDIES": "social12",
+      FRENCH: "french12",
+      "P.E": "pe12",
+      "C.A": "ca12",
+
+      PHYSICS: "phy12",
+      CHEMISTRY: "chem12",
+      BIOLOGY: "bio12",
+      GEOGRAPHY: "geo12",
+      HISTORY: "hist12",
+      ECONOMICS: "eco12",
+      ENTREPRENEURSHIP: "ent12",
+      "COMPUTER SCIENCE": "cs12",
+      LITERATURE: "lit12",
+      SWAHILI: "swa12"
+    };
+
+    // ================= TEACHER LOGIN =================
+    if (user === "teacher") {
+
+      if (!level) {
+        alert("Select Level (Primary or Secondary)");
+        return;
+      }
+
+      if (!subject) {
+        alert("Select subject");
+        return;
+      }
+
+      const correctPass = subjectPasswords[subject];
+
+      // 🔥 SAFE CHECK
+      if (!correctPass || correctPass !== pass) {
+        alert("Wrong Subject Password");
+        return;
+      }
+
+      localStorage.setItem("role", "teacher");
+      localStorage.setItem("teacherSubject", subject);
+      localStorage.setItem("teacherLevel", level);
+
+      document.getElementById("loginPage").style.display = "none";
+      document.getElementById("teacherSystem").style.display = "block";
+      document.getElementById("hodSystem").style.display = "none";
+
+      window.filterTeacherSubject?.();
+
+      return;
+    }
+
+    // ================= HOD LOGIN =================
+    if (user === "Hod" && pass === "CAMIS") {
+
+      localStorage.setItem("role", "hod");
+
+      document.getElementById("loginPage").style.display = "none";
+      document.getElementById("teacherSystem").style.display = "none";
+      document.getElementById("hodSystem").style.display = "block";
+
+      window.load?.();
+
+      return;
+    }
+
+    alert("Wrong Login");
+
+  } catch (err) {
+    console.error(err);
+    alert("Login error - check console");
+  }
+};
+window.buildTable = function(all, terms, student) {
+
+  let isAnnual = terms.length === 3;
+
+  // LEVEL DETECTION (safe)
+  let level =
+    student?.level ||
+    (student?.class?.startsWith("S") ? "SECONDARY" : "PRIMARY");
+
+  let subjects = (level === "SECONDARY")
+    ? [
+        "MATHEMATICS","ENGLISH","IKINYARWANDA",
+        "PHYSICS","CHEMISTRY","BIOLOGY",
+        "GEOGRAPHY","HISTORY",
+        "ECONOMICS","ENTREPRENEURSHIP",
+        "COMPUTER SCIENCE","LITERATURE",
+        "SWAHILI","FRENCH","P.E","C.A"
+      ]
+    : [
+        "MATHEMATICS","ENGLISH","IKINYARWANDA",
+        "SCIENCE","SOCIAL STUDIES",
+        "FRENCH","P.E","C.A"
+      ];
+
+  let html = `<table class="table-report">
+    <tr><th>SUBJECT</th>`;
+
+  terms.forEach(t => {
+    html += `<th colspan="5">${t}</th>`;
+  });
+
+  if (isAnnual) html += `<th colspan="2">ANNUAL AVG</th>`;
+
+  html += `</tr><tr><th></th>`;
+
+  terms.forEach(() => {
+    html += `<th>MID/50</th><th>EXAM/50</th><th>TOTAL/100</th><th>AVG %</th><th>REMARK</th>`;
+  });
+
+  if (isAnnual) html += `<th>AVG %</th><th>REMARK</th>`;
+
+  html += `</tr>`;
+
+  let grand = {};
+  terms.forEach(t => grand[t] = 0);
+
+  subjects.forEach(sub => {
+
+    html += `<tr><td class="subject-col">${sub}</td>`;
+
+    let annualSum = 0;
+    let annualCount = 0;
+
+    terms.forEach(term => {
+
+      let record = all.find(x =>
+        x.term === term &&
+        x.name === student?.name &&
+        x.class === student?.class &&
+        x.sdms === student?.sdms
+      );
+
+      let mid = 0;
+      let exam = 0;
+
+      if (record?.marks?.[sub]) {
+        mid = Number(record.marks[sub].mid || 0);
+        exam = Number(record.marks[sub].exam || 0);
+      }
+
+      let total = mid + exam;
+
+      let max = (sub === "P.E" || sub === "C.A") ? 20 : 100;
+      let avg = Math.round((total / max) * 100);
+
+      grand[term] += total;
+
+      annualSum += total;
+      annualCount++;
+
+      html += `
+        <td>${mid}</td>
+        <td>${exam}</td>
+        <td>${total}</td>
+        <td>${avg}%</td>
+        <td>${remark(avg)}</td>
+      `;
+    });
+
+    if (isAnnual) {
+      let annAvg = Math.round((annualSum / (annualCount * 100)) * 100);
+
+      html += `
+        <td>${annAvg}%</td>
+        <td>${remark(annAvg)}</td>
+      `;
+    }
+
+    html += `</tr>`;
+  });
+
+  // TOTAL ROW
+  html += `<tr><td><b>TOTAL AVG</b></td>`;
+
+  terms.forEach(term => {
+    let avg = Math.round(grand[term] / subjects.length);
+    if (avg > 100) avg = 100;
+
+    html += `
+      <td colspan="4">${avg}%</td>
+      <td>${remark(avg)}</td>
+    `;
+  });
+
+  if (isAnnual) {
+    let annTotal = 0;
+
+    terms.forEach(t => {
+      annTotal += Math.round(grand[t] / subjects.length);
+    });
+
+    let annAvg = Math.round(annTotal / terms.length);
+    if (annAvg > 100) annAvg = 100;
+
+    html += `
+      <td>${annAvg}%</td>
+      <td>${remark(annAvg)}</td>
+    `;
+  }
+
+  html += `</tr></table>`;
+
+  return html;
+};
+window.logout = function logout() {
+
+  // clear session
+  localStorage.removeItem("role");
+  localStorage.removeItem("teacherSubject");
+
+  // reset UI
+  document.getElementById("loginPage").style.display = "block";
+  document.getElementById("teacherSystem").style.display = "none";
+  document.getElementById("hodSystem").style.display = "none";
+
+  // clear content
+  const marks = document.getElementById("marks");
+  const list = document.getElementById("list");
+  const report = document.getElementById("report");
+
+  if (marks) marks.innerHTML = "";
+  if (list) list.innerHTML = "";
+  if (report) report.innerHTML = "";
+
+  // reset inputs (optional but important)
+  document.getElementById("username").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("subjectSelect").value = "";
+
+  // DO NOT reload page (this was breaking it)
+};
+
+window.filterTeacherSubject = function () {
+
+  let teacherSubject = localStorage.getItem("teacherSubject");
+  let cls = document.getElementById("class").value;
+
+  let container = document.getElementById("marks");
+  container.innerHTML = "";
+
+  if (!cls) return;
+
+  let students = window.classStudents?.[cls] || [];
+
+  if (students.length === 0) {
+    container.innerHTML = "<p style='color:red'>No students in this class</p>";
+    return;
+  }
+
+  let limit = (teacherSubject === "P.E" || teacherSubject === "C.A") ? 10 : 50;
+
+  students.forEach((student, index) => {
+
+    container.innerHTML += `
+      <div style="background:white;padding:10px;margin:8px;border-radius:10px;color:black;">
+        <h3>${student}</h3>
+
+        <label>Mid / ${limit}</label>
+        <input type="number" id="mid_${index}" min="0" max="${limit}">
+
+        <label>Exam / ${limit}</label>
+        <input type="number" id="exam_${index}" min="0" max="${limit}">
+      </div>
+    `;
+  });
+};
+window.addStudentToClass = function () {
+
+  let name = document.getElementById("newStudentName").value.trim();
+  let cls = document.getElementById("newStudentClass").value;
+
+  if (!name || !cls) {
+    alert("Enter student name and class");
+    return;
+  }
+
+  // ensure classStudents exists
+  if (!window.classStudents) {
+    window.classStudents = {};
+  }
+
+  if (!window.classStudents[cls]) {
+    window.classStudents[cls] = [];
+  }
+
+  // prevent duplicates
+  if (window.classStudents[cls].includes(name)) {
+    alert("Student already exists");
+    return;
+  }
+
+  window.classStudents[cls].push(name);
+
+  // SAVE to localStorage
+  localStorage.setItem("classStudents", JSON.stringify(window.classStudents));
+
+  // CLEAR inputs
+  document.getElementById("newStudentName").value = "";
+  document.getElementById("newStudentClass").value = "";
+
+  alert("Student added successfully ✔");
+
+  // IMPORTANT: refresh marks system if class selected
+  if (typeof window.filterTeacherSubject === "function") {
+    window.filterTeacherSubject();
+  }
+
+  console.log("Updated classStudents:", window.classStudents);
+};
+window.saveAllStudents = async function saveAllStudents() {
+
+  let cls = document.getElementById("class").value;
+  let term = document.getElementById("term").value;
+  let teacherSubject = localStorage.getItem("teacherSubject");
+
+  if (!cls) {
+    alert("Select Class");
+    return;
+  }
+
+  let students = window.classStudents?.[cls];
+
+  if (!students || students.length === 0) {
+    alert("No students in this class");
+    return;
+  }
+
+  const limit =
+    (teacherSubject === "P.E" || teacherSubject === "C.A")
+    ? 10 : 50;
+
+  try {
+
+    // GET OLD DATA
+    const snap = await getDocs(collection(db, "students"));
+
+    let existingStudents = [];
+
+    snap.forEach(d => {
+      existingStudents.push({
+        firebaseId: d.id,
+        ...d.data()
+      });
+    });
+
+    for (let i = 0; i < students.length; i++) {
+
+      let student = students[i];
+
+      let mid =
+        Number(document.getElementById(`mid_${i}`).value) || 0;
+
+      let exam =
+        Number(document.getElementById(`exam_${i}`).value) || 0;
+
+      if (mid > limit || exam > limit) {
+        alert(student + " exceeds limit");
+        return;
+      }
+
+      // CHECK EXISTING RECORD
+      let existing = existingStudents.find(s =>
+        s.name === student &&
+        s.class === cls &&
+        s.term === term
+      );
+
+      if (existing) {
+
+        // UPDATE SUBJECT ONLY
+        existing.marks = existing.marks || {};
+
+        existing.marks[teacherSubject] = {
+          mid,
+          exam
+        };
+
+        await setDoc(
+          doc(db, "students", existing.firebaseId),
+          existing
+        );
+
+      } else {
+
+        // CREATE NEW STUDENT
+        let newData = {
+
+          name: student,
+          class: cls,
+          term: term,
+          sdms: "",
+
+          marks: {
+            [teacherSubject]: {
+              mid,
+              exam
+            }
+          },
+
+          createdAt: Date.now()
+        };
+
+        await addDoc(
+          collection(db, "students"),
+          newData
+        );
+      }
+    }
+
+    alert("Marks Saved Successfully ✔");
+
+    await load();
+
+  } catch (err) {
+
+    console.error(err);
+
+    alert("Save Error");
+  }
+};
+
+window.printAllReports = function () {
+
+  try {
+
+    let selectedClass = prompt("Enter Class to Print (P1, P2, S1...)");
+
+    if (!selectedClass) {
+      alert("Class required");
+      return;
+    }
+
+    let students = JSON.parse(localStorage.getItem("students") || "[]");
+
+    students = students.filter(s => s.class === selectedClass);
+
+    if (!students.length) {
+      alert("No students found in " + selectedClass);
+      return;
+    }
+
+    if (typeof window.rank !== "function") {
+      alert("rank() function missing");
+      return;
+    }
+
+    if (typeof window.buildTable !== "function") {
+      alert("buildTable() function missing");
+      return;
+    }
+
+    let printContent = "";
+
+    students.forEach(s => {
+
+      // TERMS FIX
+      let terms = [];
+      if (s.term === "TERM1") terms = ["TERM1"];
+      else if (s.term === "TERM2") terms = ["TERM1", "TERM2"];
+      else if (s.term === "TERM3") terms = ["TERM1", "TERM2", "TERM3"];
+      else terms = [s.term];
+
+      // RANKING SAFE
+      let posList = window.rank(students, s.class, terms) || [];
+
+      let positionIndex = posList.findIndex(x =>
+        x.student?.sdms === s.sdms &&
+        x.student?.name === s.name
+      );
+
+      let position = positionIndex >= 0 ? positionIndex + 1 : "N/A";
+      let outOf = posList.length || 0;
+
+      let positionRemark =
+        position === 1 ? "1st Position - Excellent"
+        : position !== "N/A" && position <= 3 ? "Top Performer"
+        : "Keep Improving";
+
+      // GET SAME STUDENT ALL TERMS
+      let all = students.filter(x =>
+        x.sdms === s.sdms &&
+        x.class === s.class
+      );
+
+      let html = `
+        <div class="report">
+
+          <div class="watermark">SCHOOL MIS</div>
+
+          <div style="text-align:center;">
+            <img src="${localStorage.getItem('schoolLogo') || ''}"
+              style="width:80px;height:80px;border-radius:50%;object-fit:contain;">
+
+            <h2>STUDENT REPORT CARD</h2>
+            <h4>Academic Performance Report</h4>
+          </div>
+
+          <div class="line-input">
+            NAME <span>${s.name || ""}</span>
+            CLASS <span>${s.class || ""}</span>
+          </div>
+
+          <div class="line-input">
+            TERM VIEW <span>${terms.join(" + ")}</span>
+          </div>
+
+          <div class="line-input">
+            POSITION <span>${position}</span>
+            OUT OF <span>${outOf}</span>
+          </div>
+
+          <div class="line-input">
+            SDMS <span>${s.sdms || "-"}</span>
+          </div>
+
+          <div class="line-input">
+            PERFORMANCE <span>${positionRemark}</span>
+          </div>
+
+          <div class="line-input">
+            CONDUCT <span>____________________</span>
+          </div>
+
+          <div class="line-input">
+            ATTENDANCE <span>____________________</span>
+          </div>
+
+          <div class="term-title">SUBJECT RESULTS</div>
+
+          ${window.buildTable(all, terms, s)}
+
+          <div style="border:1px solid #000;padding:8px;font-size:11px;line-height:1.5;margin-top:8px;">
+
+            <p><b>Teacher Remarks:</b> ____________________________</p>
+            <p><b>Class Teacher:</b> ____________________</p>
+            <p><b>Signature:</b> ____________________</p>
+            <p><b>Date:</b> ____________________</p>
+            <p><b>School Fees:</b> ____________________</p>
+
+          </div>
+
+        </div>
+      `;
+
+      printContent += html;
+
+    });
+
+    let printWindow = window.open("", "_blank");
+
+    if (!printWindow) {
+      alert("Popup blocked. Allow popups or use Live Server.");
+      return;
+    }
+
+    printWindow.document.write(`
+      <html>
+      <head>
+        <title>${selectedClass} Reports</title>
+
+        <style>
+          body {
+            font-family: Arial;
+            margin: 0;
+            padding: 10px;
+            background: white;
+          }
+
+          .report {
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+            page-break-after: always;
+            position: relative;
+          }
+
+          .report:last-child {
+            page-break-after: auto;
+          }
+
+          .watermark {
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            font-size: 60px;
+            opacity: 0.08;
+            transform: rotate(-30deg);
+            pointer-events: none;
+          }
+
+          .line-input {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 0;
+            font-size: 12px;
+            font-weight: bold;
+          }
+
+          .line-input span {
+            flex: 1;
+            border-bottom: 1px dotted #000;
+            margin-left: 5px;
+          }
+
+          .term-title {
+            background: #eee;
+            padding: 6px;
+            font-weight: bold;
+            margin-top: 10px;
+            border-left: 5px solid green;
+          }
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9px;
+          }
+
+          th, td {
+            border: 1px solid #000;
+            padding: 3px;
+            text-align: center;
+          }
+
+          @page {
+            size: A4 landscape;
+            margin: 5mm;
+          }
+        </style>
+      </head>
+
+      <body>
+        ${printContent}
+
+        <script>
+          window.onload = function () {
+            setTimeout(() => window.print(), 500);
+          }
+        <\/script>
+      </body>
+      </html>
+    `);
+
+    printWindow.document.close();
+
+  } catch (err) {
+    console.error(err);
+    alert("Print error - check console");
+  }
+};
+window.remark = function (avg) {
+
+if (avg >= 80) return "Excellent";
+else if (avg >= 70) return "Very Good";
+else if (avg >= 60) return "Good";
+else if (avg >= 50) return "Fair";
+else return "Poor";
+
+};
+window.rank = function (students, cls, terms) {
+
+  let filtered = students.filter(s => s.class === cls);
+
+  let map = {};
+
+  filtered.forEach(s => {
+
+    let key = s.sdms || s.name;
+
+    if (!map[key]) {
+      map[key] = {
+        student: s,
+        total: 0
+      };
+    }
+
+    let marks = s.marks || {};
+
+    Object.keys(marks).forEach(sub => {
+
+      let m = marks[sub] || { mid: 0, exam: 0 };
+
+      // 🔥 FIX: respect terms filter
+      if (!terms.includes(s.term)) return;
+
+      map[key].total += (Number(m.mid) + Number(m.exam));
+    });
+
+  });
+
+  let arr = Object.values(map);
+
+  // sort descending
+  arr.sort((a, b) => b.total - a.total);
+
+  return arr;
+};
+window.getDoc = getDoc;
+
+window.view = async function (id) {
+  try {
+    if (!window.db) {
+      alert("Database not ready");
+      return;
+    }
+
+    const studentRef = doc(window.db, "students", id);
+    const studentSnap = await getDoc(studentRef);
+
+    if (!studentSnap.exists()) {
+      alert("Student not found");
+      return;
+    }
+
+    const s = {
+      id,
+      ...studentSnap.data()
+    };
+
+    const querySnapshot = await getDocs(collection(window.db, "students"));
+
+    let students = [];
+    querySnapshot.forEach(d => {
+      students.push({ id: d.id, ...d.data() });
+    });
+
+    // filter same student records (all terms)
+    const all = students.filter(x =>
+      x.name === s.name &&
+      x.class === s.class &&
+      x.sdms === s.sdms
+    );
+
+    // TERM FIX
+    let terms = [];
+    if (s.term === "TERM1") terms = ["TERM1"];
+    else if (s.term === "TERM2") terms = ["TERM1", "TERM2"];
+    else if (s.term === "TERM3") terms = ["TERM1", "TERM2", "TERM3"];
+    else terms = [s.term];
+
+    // SAFETY CHECKS
+    if (typeof window.rank !== "function") {
+      alert("rank() function missing");
+      return;
+    }
+
+    if (typeof window.buildTable !== "function") {
+      alert("buildTable() function missing");
+      return;
+    }
+
+    // ranking
+    const posList = window.rank(students, s.class, terms);
+
+    const positionIndex = posList.findIndex(x =>
+      x.student?.sdms === s.sdms &&
+      x.student?.name === s.name
+    );
+
+    const position = positionIndex >= 0 ? positionIndex + 1 : "N/A";
+    const outOf = posList.length;
+
+    const level =
+      s.level ||
+      (s.class?.startsWith("S") ? "SECONDARY" : "PRIMARY");
+
+    const html = `
+      <div class="report">
+
+        <div style="text-align:center;">
+          <img src="${localStorage.getItem("schoolLogo") || ""}"
+            style="width:80px;height:80px;object-fit:contain;">
+          <div class="header-top">PUPIL REPORT CARD</div>
+        </div>
+
+        <div class="line-input">
+          NAME <span>${s.name || ""}</span>
+          CLASS <span>${s.class || ""}</span>
+        </div>
+
+        <div class="line-input">
+          TERM VIEW <span>${terms.join(" + ")}</span>
+        </div>
+
+        <div class="line-input">
+          POSITION <span>${position}</span>
+          OUT OF <span>${outOf}</span>
+        </div>
+
+        <div class="line-input">
+          SDMS <span>${s.sdms || "-"}</span>
+        </div>
+
+        <div class="line-input">
+          ACADEMIC YEAR
+          <span>${new Date().getFullYear()}/${new Date().getFullYear() + 1}</span>
+        </div>
+
+        <div class="term-title">SUBJECT RESULTS</div>
+
+        ${window.buildTable(all, terms, s)}
+
+        <br><br>
+
+        <div style="border:1px solid #000;padding:10px;font-size:12px;line-height:1.6">
+
+          <p><b>Daily Class Work:</b> ____________________ <b>Attendance:</b> ____________________</p>
+          <p><b>Class teacher’s report:</b> ____________________________________________</p>
+
+          <p><b>Sign and date:</b> ____________________ <b>Next term begins:</b> ____________</p>
+          <p><b>School fees:</b> ____________________</p>
+
+          <p><b>Debt:</b> ____________ <b>Crayons:</b> ____________________</p>
+          <p><b>Books:</b> ____________________</p>
+          <p><b>Pencils:</b> ____________________</p>
+          <p><b>Toilet papers:</b> ____________________</p>
+
+          <p><b>Head teacher’s report:</b> ____________________________________________</p>
+
+        </div>
+
+        <br>
+
+        <button onclick="window.print()">Print</button>
+        <button onclick="document.getElementById('report').innerHTML=''">Hide</button>
+
+      </div>
+    `;
+
+    document.getElementById("report").innerHTML = html;
+
+  } catch (err) {
+    console.error(err);
+    alert("Firebase error - check console");
+  }
+};
+window.loadLogoFromFirebase = function () {
+  try {
+    if (!window.db) return;
+
+    const ref = doc(db, "settings", "school");
+
+    // 🔥 REAL TIME LISTENER (IMPORTANT)
+    onSnapshot(ref, (snap) => {
+      if (!snap.exists()) return;
+
+      const data = snap.data();
+      const img = document.getElementById("schoolLogo");
+
+      if (data.logo) {
+        img.src = data.logo;
+        img.style.display = "block";
+
+        // cache optional
+        localStorage.setItem("schoolLogo", data.logo);
+      }
+    });
+
+  } catch (err) {
+    console.error("Logo load error:", err);
+  }
+};
+window.deleteStudent = async function (id) {
+
+  try {
+
+    if (!confirm("Are you sure you want to delete this student?")) return;
+
+    await deleteDoc(doc(window.db, "students", id));
+
+    alert("Student deleted successfully ✔");
+
+    // refresh list
+    window.load();
+
+  } catch (err) {
+    console.error(err);
+    alert("Delete failed");
+  }
+};
+window.clearAll = async function () {
+
+  try {
+
+    if (!confirm("This will delete ALL students. Continue?")) return;
+
+    const snap = await getDocs(collection(window.db, "students"));
+
+    const deletes = [];
+
+    snap.forEach((d) => {
+      deletes.push(deleteDoc(doc(window.db, "students", d.id)));
+    });
+
+    await Promise.all(deletes);
+
+    alert("All students deleted ✔");
+
+    // refresh UI + localStorage
+    localStorage.removeItem("students");
+    window.load();
+
+  } catch (err) {
+    console.error(err);
+    alert("Delete all failed");
+  }
+};
+ window.loadClassStudents = function () {
+
+  let cls = document.getElementById("printClassSelect").value;
+
+  if (!cls) {
+    alert("Select class first");
+    return;
+  }
+
+  let students = JSON.parse(localStorage.getItem("students") || "[]");
+
+  let uniqueMap = {};
+
+  students
+    .filter(s => s.class === cls)
+    .forEach(s => {
+
+      let key = (s.sdms || s.name) + "_" + s.class;
+
+      if (!uniqueMap[key]) {
+        uniqueMap[key] = s;
+      }
+    });
+
+  let filtered = Object.values(uniqueMap);
+
+  let html = "";
+
+  filtered.forEach(s => {
+    html += `
+      <tr>
+        <td>${s.name}</td>
+        <td>${s.class}</td>
+        <td>${s.sdms || "-"}</td>
+        <td>
+          <button onclick="deleteStudent('${s.id}')">Delete</button>
+        </td>
+      </tr>
+    `;
+  });
+
+  // 🔥 IMPORTANT: FORCE CLEAR BEFORE SET
+  const tableBody = document.getElementById("classList");
+  tableBody.innerHTML = "";
+  tableBody.innerHTML = html;
+};
+  window.deleteClassStudents = async function () {
+
+  let cls = document.getElementById("printClassSelect").value;
+
+  if (!cls) {
+    alert("Select class first");
+    return;
+  }
+
+  if (!confirm("Delete ALL students in " + cls + "?")) return;
+
+  const snap = await getDocs(collection(db, "students"));
+
+  let tasks = [];
+
+  snap.forEach(d => {
+    let data = d.data();
+
+    if (data.class === cls) {
+      tasks.push(deleteDoc(doc(db, "students", d.id)));
+    }
+  });
+
+  await Promise.all(tasks);
+
+  alert("Class deleted ✔");
+
+  window.load();
+};
+ 
+  window.toggleTable = function (id) {
+
+  let table = document.getElementById(id);
+
+  if (!table) return;
+
+  if (table.style.display === "none") {
+    table.style.display = "table";
+  } else {
+    table.style.display = "none";
+  }
+};
+window.loadSubjects = function () {
+
+  let level = document.getElementById("levelSelect").value;
+
+  let subjectSelect = document.getElementById("subjectSelect");
+
+  // clear old subjects
+  subjectSelect.innerHTML =
+    '<option value="">Select Subject</option>';
+
+  // PRIMARY SUBJECTS
+  let primarySubjects = [
+
+    "MATHEMATICS",
+    "ENGLISH",
+    "IKINYARWANDA",
+    "SCIENCE",
+    "SOCIAL STUDIES",
+
+    "FRENCH",
+    "P.E",
+    "C.A"
+
+  ];
+
+  // SECONDARY SUBJECTS
+  let secondarySubjects = [
+
+    "MATHEMATICS",
+    "ENGLISH",
+    "IKINYARWANDA",
+
+    "PHYSICS",
+    "CHEMISTRY",
+    "BIOLOGY",
+
+    "GEOGRAPHY",
+    "HISTORY",
+
+    "ECONOMICS",
+    "ENTREPRENEURSHIP",
+
+    "COMPUTER SCIENCE",
+
+    "LITERATURE",
+
+    "SWAHILI",
+
+    "FRENCH",
+    "P.E",
+    "C.A"
+
+  ];
+
+  let subjects = [];
+
+  if (level === "PRIMARY") {
+
+    subjects = primarySubjects;
+
+  } else if (level === "SECONDARY") {
+
+    subjects = secondarySubjects;
+
+  }
+
+  // load subjects
+  subjects.forEach(sub => {
+
+    subjectSelect.innerHTML += `
+      <option value="${sub}">
+        ${sub}
+      </option>
+    `;
+
+  });
+
+};
+document.getElementById("logoUpload").addEventListener("change", async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+
+  reader.onload = async () => {
+    const base64 = reader.result;
+
+    await setDoc(doc(db, "settings", "school"), {
+      logo: base64,
+      updatedAt: Date.now()
+    });
+
+    alert("Global logo updated ✔ (everyone will see it)");
+  };
+
+  reader.readAsDataURL(file);
+});
+</script>
+</body>
+</html>  
