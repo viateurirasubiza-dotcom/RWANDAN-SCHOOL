@@ -1796,6 +1796,16 @@ document.getElementById("logoUpload").addEventListener("change", async (e) => {
 
   reader.readAsDataURL(file);
 });
+  window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("schoolLogo");
+  if (saved) {
+    const img = document.getElementById("schoolLogo");
+    img.src = saved;
+    img.style.display = "block";
+  }
+
+  window.loadLogoFromFirebase();
+});
 </script>
 </body>
 </html>  
