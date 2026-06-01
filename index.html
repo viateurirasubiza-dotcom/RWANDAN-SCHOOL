@@ -487,27 +487,33 @@ border:3px solid #00ffff;
 filter:drop-shadow(0 0 15px #00ffff);
 animation:logoGlow 2s infinite alternate;
 }
-  
- .moving-text{
-width:100%;
-overflow:hidden;
-white-space:nowrap;
-color:#00ffff;
-font-weight:bold;
-font-size:18px;
-padding:10px 0;
-text-align:center;
-animation:moveText 15s linear infinite;
+.moving-text {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0;
+  position: relative;
 }
 
-@keyframes moveText{
-0%{
-transform:translateX(100%);
+.moving-text span {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: moveText 20s linear infinite;
 }
-100%{
-transform:translateX(-100%);
-}
-}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}  
+
 </style>
 </head>
 
@@ -537,9 +543,11 @@ transform:translateX(-100%);
 </select>
 
 </select>
-  <div class="moving-text">
-RWANDAN SCHOOL MIS | Developed by IRASUBIZA VIATEUR | East African University Rwanda - Nyagatare | Contact: 0794476085
-  </div>
+<div class="moving-text">
+  <span>
+    RWANDAN SCHOOL MIS | Developed by IRASUBIZA VIATEUR | East African University Rwanda - Nyagatare | Contact: 0794476085
+  </span>
+</div>  
 <div id="loginPage" class="login-box">
 
 
