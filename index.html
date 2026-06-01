@@ -513,6 +513,35 @@ animation:logoGlow 2s infinite alternate;
     transform: translateX(-100%);
   }
 }  
+  .dark-mode{
+  background:#111 !important;
+  color:white !important;
+}
+
+.dark-mode .container{
+  background:#1e1e1e !important;
+  color:white !important;
+}
+
+.dark-mode input,
+.dark-mode select{
+  background:#333 !important;
+  color:white !important;
+  border:1px solid #555;
+}
+
+.dark-mode table{
+  background:#222;
+  color:white;
+}
+
+.dark-mode th{
+  background:#333;
+}
+
+.dark-mode td{
+  border:1px solid #555;
+}
 
 </style>
 </head>
@@ -618,9 +647,12 @@ animation:logoGlow 2s infinite alternate;
     <label for="logoUpload" id="uploadBtn" class="upload-btn">
 Upload School Logo
 </label>
-
+    
 
     <button onclick="printAllReports()">Print All Reports</button>
+    <button onclick="toggleDarkMode()">
+🌙 Dark Mode
+</button>
     <button onclick="clearAll()">Delete All</button>
     <button onclick="deleteClassStudents()">Delete Class</button>
 <button onclick="loadClassStudents()">View Class Students</button>
@@ -784,6 +816,19 @@ window.load = async function load() {
   const list = document.getElementById("list");
   if (list) list.innerHTML = html;
 };
+  function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+
+  const btn = document.querySelector("[onclick='toggleDarkMode()']");
+  
+  if(document.body.classList.contains("dark-mode")){
+    btn.innerHTML = "☀️ Light Mode";
+    localStorage.setItem("theme","dark");
+  }else{
+    btn.innerHTML = "🌙 Dark Mode";
+    localStorage.setItem("theme","light");
+  }
+}
 
 window.login = function () {
 
