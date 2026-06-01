@@ -531,16 +531,16 @@ animation:logoGlow 2s infinite alternate;
 }
 
 .dark-mode table{
-  background:#222;
-  color:white;
+  background:#222 !important;
+  color:white !important;
 }
 
 .dark-mode th{
-  background:#333;
+  background:#333 !important;
 }
 
 .dark-mode td{
-  border:1px solid #555;
+  border:1px solid #555 !important;
 }
 
 </style>
@@ -816,19 +816,50 @@ window.load = async function load() {
   const list = document.getElementById("list");
   if (list) list.innerHTML = html;
 };
-  function toggleDarkMode() {
+  window.toggleDarkMode = function () {
+
   document.body.classList.toggle("dark-mode");
 
-  const btn = document.querySelector("[onclick='toggleDarkMode()']");
-  
-  if(document.body.classList.contains("dark-mode")){
-    btn.innerHTML = "☀️ Light Mode";
-    localStorage.setItem("theme","dark");
-  }else{
-    btn.innerHTML = "🌙 Dark Mode";
-    localStorage.setItem("theme","light");
+  const darkBtn = document.querySelector("[onclick='toggleDarkMode()']");
+
+  if (document.body.classList.contains("dark-mode")) {
+
+    localStorage.setItem("theme", "dark");
+
+    if (darkBtn) {
+      darkBtn.innerHTML = "☀️ Light Mode";
+    }
+
+  } else {
+
+    localStorage.setItem("theme", "light");
+
+    if (darkBtn) {
+      darkBtn.innerHTML = "🌙 Dark Mode";
+    }
+
   }
-}
+
+};
+
+// Load saved theme automatically
+window.addEventListener("DOMContentLoaded", () => {
+
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+
+    document.body.classList.add("dark-mode");
+
+    const darkBtn = document.querySelector("[onclick='toggleDarkMode()']");
+
+    if (darkBtn) {
+      darkBtn.innerHTML = "☀️ Light Mode";
+    }
+
+  }
+
+});
 
 window.login = function () {
 
