@@ -1986,6 +1986,26 @@ document.getElementById("logoUpload").addEventListener("change", async (e) => {
 
   window.loadLogoFromFirebase();
 });
+  function changeBackgroundByTime() {
+
+  const hour = new Date().getHours();
+
+  if (hour >= 6 && hour < 12) {
+
+    document.body.style.background =
+      "linear-gradient(135deg,#87CEEB,#E0F7FA)";
+
+  } else if (hour >= 12 && hour < 18) {
+
+    document.body.style.background =
+      "linear-gradient(135deg,#4FC3F7,#81D4FA)";
+
+  } else {
+
+    document.body.style.background =
+      "linear-gradient(135deg,#050510,#000000)";
+  }
+}
   function updateClock() {
   const now = new Date();
 
@@ -2019,7 +2039,6 @@ document.getElementById("logoUpload").addEventListener("change", async (e) => {
   document.getElementById("clock").innerHTML =
     `🕒 ${time.trim()} <br> 📅 ${date.trim()}`;
 
-  changeBackgroundByTime();
 }
 
 setInterval(updateClock, 1000);
